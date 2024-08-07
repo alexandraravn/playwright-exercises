@@ -4,8 +4,8 @@ import generateRandomString from './helper/random-number-generator';
 test('TST01-Form-Fields', async ({ page }) => {
     await page.goto('https://practice-automation.com/form-fields/');
 
-    await page.locator('id=name').click();
-    await page.locator('id=name').fill('Alexandra');
+    await page.locator('id=name-input').click();
+    await page.locator('id=name-input').fill('Alexandra');
 
     //Check favorite drink option
     const drinks = ['Water', 'Coffee', 'Wine'];
